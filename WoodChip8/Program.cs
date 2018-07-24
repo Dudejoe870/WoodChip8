@@ -2,11 +2,12 @@
 
 namespace WoodChip8
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            new MainWindow().Run(60, 60);
         }
     }
 }
